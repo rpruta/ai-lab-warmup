@@ -38,3 +38,12 @@
 - Koszt utrzymania: 0 zł dziś. Przy pierwszym kluczu API ustawić limit wydatków i alert.
 - Decyzja: brak nowego ADR. Hipotezę o PATH zweryfikować, zanim trafi do ADR.
 - Następny krok: powtórka PATH/symlink bez notatek (5 min), potem commit logu przez branch.
+
+## 2026-11-24: obieg Git + powtórka PATH/symlink
+- Tryb: głęboki
+- Co zadziałało: powtórka PATH po wskazówkach; analogia skrót vs ksero do symlinków; `ls -a docs` przed `git add`; test hipotezy (`ls docs` na main przed pull).
+- Co nie zadziałało: komunikat commita opisywał czynność ("dodanie pliku"), nie zmianę; opis PR też; założenie, że merge na GitHubie zmienia lokalny main.
+- Nowe pojęcia (3): staged vs untracked, Conventional Commits (typ: opis), push/pull (remote vs lokalne repo).
+- Co może pójść źle: publiczne repo + klucz w commicie; reakcja: unieważnić klucz.
+- Koszt: 0 zł dziś. Przed pierwszym kluczem API: limit wydatków i alert.
+- Decyzja: brak nowego ADR.
